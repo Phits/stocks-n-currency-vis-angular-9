@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { IntradayRealtimeStocksComponent } from './intraday-realtime-stocks/intraday-realtime-stocks.component';
 import { StocksService } from './services/stocks.service';
 
+import { StocksRoutingModule } from './stocks-routing.module';
+
 @NgModule({
   declarations: [IntradayRealtimeStocksComponent],
   imports: [
@@ -15,6 +17,7 @@ import { StocksService } from './services/stocks.service';
     HighchartsChartModule,
     HttpClientModule,
     FormsModule,
+    StocksRoutingModule,
   ],
   providers: [StocksService]
 })
